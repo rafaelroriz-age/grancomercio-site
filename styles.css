@@ -143,7 +143,20 @@
   --container-lg: 1024px;
   --container-xl: 1280px;
 }
+.site-logo {
+  height: 48px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  max-width: 220px;
+}
 
+@media (max-width: 640px) {
+  .site-logo {
+    height: 40px;
+    max-width: 180px;
+  }
+}
 /* Dark mode colors */
 @media (prefers-color-scheme: dark) {
   :root {
